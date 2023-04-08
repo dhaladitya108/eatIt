@@ -8,9 +8,9 @@ class SplashScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    // Timer(const Duration(seconds: 2), () {
-    //   context.go('/home');
-    // });
+    Timer(const Duration(seconds: 2), () {
+      context.go('/home');
+    });
 
     return Scaffold(
       body: Center(
