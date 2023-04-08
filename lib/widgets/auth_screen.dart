@@ -9,42 +9,44 @@ class AuthScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      body: Padding(
-          padding:
-              const EdgeInsets.only(top: 32, left: 20, bottom: 16, right: 20),
-          child: SingleChildScrollView(
-            child: Column(
-              children: [
-                Row(children: [
-                  InkWell(
-                    onTap: () {
-                      context.pop();
-                    },
-                    child: Container(
-                      padding: const EdgeInsets.only(
-                          top: 12, right: 14, bottom: 12, left: 12),
-                      decoration: const BoxDecoration(
-                          shape: BoxShape.circle,
-                          color: AppColors
-                              .bgPrimary), // set the background color of the circle
-                      child: const Icon(
-                        Icons.arrow_back_ios_new_rounded,
-                        color: Colors.black,
-                        size: 24,
-                        weight: 2,
-                      ), // set the icon and its color
-                    ),
-                  )
-                ]),
-                Padding(
-                  padding: const EdgeInsets.symmetric(vertical: 40),
-                  child: Image(image: image, height: 220),
-                ),
-                Column(children: children),
-              ],
-            ),
-          )),
+    return SafeArea(
+      child: Scaffold(
+        body: Padding(
+            padding:
+                const EdgeInsets.all(20),
+            child: SingleChildScrollView(
+              child: Column(
+                children: [
+                  Row(children: [
+                    InkWell(
+                      onTap: () {
+                        context.pop();
+                      },
+                      child: Container(
+                        padding: const EdgeInsets.only(
+                            top: 12, right: 14, bottom: 12, left: 12),
+                        decoration: const BoxDecoration(
+                            shape: BoxShape.circle,
+                            color: AppColors
+                                .bgPrimary), // set the background color of the circle
+                        child: const Icon(
+                          Icons.arrow_back_ios_new_rounded,
+                          color: Colors.black,
+                          size: 24,
+                          weight: 2,
+                        ), // set the icon and its color
+                      ),
+                    )
+                  ]),
+                  Padding(
+                    padding: const EdgeInsets.symmetric(vertical: 40),
+                    child: Image(image: image, height: 220),
+                  ),
+                  Column(children: children),
+                ],
+              ),
+            )),
+      ),
     );
   }
 }
