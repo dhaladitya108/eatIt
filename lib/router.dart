@@ -1,14 +1,19 @@
-import 'package:eatit/screens/enter_phone.dart';
 import 'package:eatit/screens/screen.dart';
+import 'package:eatit/screens/splash.dart';
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 
 class AppRouter {
   GoRouter router = GoRouter(routes: [
     GoRoute(
-        path: '/',
+        path: '/home',
         pageBuilder: (context, state) {
           return const MaterialPage(child: EnterPhone());
+        }),
+    GoRoute(
+        path: '/',
+        pageBuilder: (context, state) {
+          return const MaterialPage(child: SplashScreen());
         }),
     GoRoute(
         path: '/verify_otp',
