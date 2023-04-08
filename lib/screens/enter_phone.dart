@@ -22,6 +22,7 @@ class EnterPhone extends StatelessWidget {
           contentPadding:
               const EdgeInsets.symmetric(vertical: 20, horizontal: 24),
           hintText: 'Phone Number',
+          hintStyle: const TextStyle(color: Colors.white54),
           enabledBorder: OutlineInputBorder(
               borderSide:
                   const BorderSide(color: AppColors.bgPrimary, width: 2),
