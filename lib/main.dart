@@ -1,10 +1,9 @@
 import 'package:eatit/config/colors.dart';
 import 'package:eatit/screens/screen.dart';
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
 
-void main() {
-  runApp(const MyApp());
-}
+void main() => runApp(const MyApp());
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
@@ -19,10 +18,7 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
         scaffoldBackgroundColor: AppColors.bgDark,
       ),
-      home: const SafeArea(
-          child: Scaffold(
-        body: EnterPhone(),
-      )),
+      home: Login(),
     );
   }
 }

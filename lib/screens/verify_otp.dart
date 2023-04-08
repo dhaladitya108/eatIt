@@ -19,6 +19,7 @@ class VerifyOTP extends StatelessWidget {
       ),
       const SizedBox(height: 16),
       Pinput(
+        length: 6,
         defaultPinTheme: defaultPinTheme,
         focusedPinTheme: focusedPinTheme,
         submittedPinTheme: submittedPinTheme,
