@@ -1,6 +1,7 @@
 import 'package:eatit/widgets/auth_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:eatit/config/config.dart';
+import 'package:go_router/go_router.dart';
 
 class EnterPhone extends StatelessWidget {
   const EnterPhone({super.key});
@@ -36,7 +37,9 @@ class EnterPhone extends StatelessWidget {
       ),
       const SizedBox(height: 24),
       TextButton(
-        onPressed: () {},
+        onPressed: () {
+          context.push('/verify_otp');
+        },
         style: TextButton.styleFrom(
           padding: const EdgeInsets.symmetric(vertical: 14),
           backgroundColor: AppColors.bgPrimary,

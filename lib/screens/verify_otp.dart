@@ -2,6 +2,7 @@ import 'package:eatit/config/config.dart';
 import 'package:eatit/widgets/auth_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:pinput/pinput.dart';
+import 'package:go_router/go_router.dart';
 
 class VerifyOTP extends StatelessWidget {
   const VerifyOTP({super.key});
@@ -28,7 +29,9 @@ class VerifyOTP extends StatelessWidget {
       ),
       const SizedBox(height: 24),
       TextButton(
-        onPressed: () {},
+        onPressed: () {
+          context.push('/login');
+        },
         style: TextButton.styleFrom(
           padding: const EdgeInsets.symmetric(vertical: 14),
           backgroundColor: AppColors.bgPrimary,
@@ -71,6 +74,6 @@ final focusedPinTheme = defaultPinTheme.copyDecorationWith(
 
 final submittedPinTheme = defaultPinTheme.copyWith(
   decoration: defaultPinTheme.decoration?.copyWith(
-    color: Color.fromARGB(50, 244, 241, 195),
+    color: const Color.fromARGB(50, 244, 241, 195),
   ),
 );

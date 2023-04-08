@@ -1,7 +1,6 @@
 import 'package:eatit/config/colors.dart';
-import 'package:eatit/screens/screen.dart';
+import 'package:eatit/router.dart';
 import 'package:flutter/material.dart';
-import 'package:go_router/go_router.dart';
 
 void main() => runApp(const MyApp());
 
@@ -11,14 +10,15 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return MaterialApp.router(
       title: 'EatIt',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
         primarySwatch: Colors.blue,
         scaffoldBackgroundColor: AppColors.bgDark,
       ),
-      home: Login(),
+      routeInformationParser: AppRouter().router.routeInformationParser,
+      routerDelegate: AppRouter().router.routerDelegate,
     );
   }
 }
