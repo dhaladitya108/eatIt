@@ -8,4 +8,5 @@ class _Image extends AssetImage {
 
 class AppImages {
   static const otpIllus = _Image('otp_illus.png');
+  static const loginIllus = _Image('login_illus.png');
 }

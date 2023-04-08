@@ -1,5 +1,5 @@
 import 'package:eatit/config/colors.dart';
-import 'package:eatit/screen/screen.dart';
+import 'package:eatit/screens/screen.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -13,7 +13,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
+      title: 'EatIt',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
         primarySwatch: Colors.blue,
@@ -21,7 +21,7 @@ class MyApp extends StatelessWidget {
       ),
       home: const SafeArea(
           child: Scaffold(
-        body: VerifyOTP(),
+        body: EnterPhone(),
       )),
     );
   }

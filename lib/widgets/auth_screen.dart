@@ -34,7 +34,7 @@ class AuthScreen extends StatelessWidget {
               ]),
               Padding(
                 padding: const EdgeInsets.symmetric(vertical: 40),
-                child: Image(image: image, height: 255),
+                child: Image(image: image, height: 220),
               ),
               Column(children: children),
             ],
