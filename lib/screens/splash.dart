@@ -8,22 +8,26 @@ class SplashScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    Timer(const Duration(seconds: 2), () {
-      context.go('/home');
-    });
+    // Timer(const Duration(seconds: 2), () {
+    //   context.go('/home');
+    // });
 
     return Scaffold(
       body: Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          crossAxisAlignment: CrossAxisAlignment.center,
+        child: Stack(
           children: const [
-            Spacer(),
-            Image(image: AppImages.eatItLogo, height: 50),
-            SizedBox(height: 250),
-            Text('ver 1.0.0',
-                style: TextStyle(fontSize: 12, color: Colors.white24)),
-            SizedBox(height: 50)
+            Positioned(
+              bottom: 100,
+              left: 100,
+              right: 100,
+              child: Text('ver 1.0.0',
+                  textAlign: TextAlign.center,
+                  style: TextStyle(fontSize: 14, color: Colors.white24)),
+            ),
+            SizedBox(
+                height: double.infinity,
+                width: double.infinity,
+                child: Image(image: AppImages.eatItLogo, height: 50)),
           ],
         ),
       ),
