@@ -16,10 +16,14 @@ class AuthScreen extends StatelessWidget {
               Row(children: [
                 InkWell(
                   onTap: () {},
-                  child: const CircleAvatar(
-                    backgroundColor: AppColors
-                        .bgPrimary, // set the background color of the circle
-                    child: Icon(
+                  child: Container(
+                    padding: const EdgeInsets.only(
+                        top: 12, right: 14, bottom: 12, left: 12),
+                    decoration: const BoxDecoration(
+                        shape: BoxShape.circle,
+                        color: AppColors
+                            .bgPrimary), // set the background color of the circle
+                    child: const Icon(
                       Icons.arrow_back_ios_new_rounded,
                       color: Colors.black,
                       size: 24,
