@@ -212,6 +212,93 @@ class Home extends StatelessWidget {
                             ],
                           ),
                         ),
+                        const SizedBox(height: 4),
+                        Container(
+                          padding: const EdgeInsets.all(4),
+                          decoration: BoxDecoration(
+                            borderRadius: BorderRadius.circular(24),
+                            color: AppColors.bgSoftDark,
+                          ),
+                          child: Column(
+                            children: [
+                              Padding(
+                                padding: const EdgeInsets.all(8.0),
+                                child: Row(
+                                  children: [
+                                    Container(
+                                      padding: const EdgeInsets.all(8),
+                                      decoration: const BoxDecoration(
+                                          shape: BoxShape.circle,
+                                          color: AppColors
+                                              .bgSecondary), // set the background color of the circle
+                                      child: const Icon(
+                                        Icons.mail_outline,
+                                        color: Colors.black,
+                                        size: 14,
+                                        weight: 2,
+                                      ), // set the icon and its color
+                                    ),
+                                    const SizedBox(width: 24),
+                                    const Text('Noodles',
+                                        style: TextStyle(
+                                            fontSize: 16, color: Colors.white)),
+                                  ],
+                                ),
+                              ),
+                              const SizedBox(height: 4),
+                              Padding(
+                                padding: const EdgeInsets.all(8.0),
+                                child: Row(
+                                  children: [
+                                    Container(
+                                      padding: const EdgeInsets.all(8),
+                                      decoration: const BoxDecoration(
+                                          shape: BoxShape.circle,
+                                          color: AppColors
+                                              .bgSecondary), // set the background color of the circle
+                                      child: const Icon(
+                                        Icons.mail_outline,
+                                        color: Colors.black,
+                                        size: 14,
+                                        weight: 2,
+                                      ), // set the icon and its color
+                                    ),
+                                    const SizedBox(width: 24),
+                                    const Text('Corn Chat',
+                                        style: TextStyle(
+                                            fontSize: 16, color: Colors.white)),
+                                  ],
+                                ),
+                              ),
+                              const SizedBox(height: 4),
+                              Padding(
+                                padding: const EdgeInsets.all(8.0),
+                                child: Row(
+                                  children: [
+                                    Container(
+                                      padding: const EdgeInsets.all(8),
+                                      decoration: const BoxDecoration(
+                                          shape: BoxShape.circle,
+                                          color: AppColors
+                                              .bgSecondary), // set the background color of the circle
+                                      child: const Icon(
+                                        Icons.mail_outline,
+                                        color: Colors.black,
+                                        size: 14,
+                                        weight: 2,
+                                      ), // set the icon and its color
+                                    ),
+                                    const SizedBox(width: 24),
+                                    const Text('Spring Roll',
+                                        style: TextStyle(
+                                            fontSize: 16, color: Colors.white)),
+                                  ],
+                                ),
+                              ),
+                              const SizedBox(height: 4),
+                            ],
+                          ),
+                        ),
                         const SizedBox(height: 12),
                         Padding(
                           padding: const EdgeInsets.all(8.0),
